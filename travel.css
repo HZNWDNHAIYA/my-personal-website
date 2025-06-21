@@ -1,0 +1,54 @@
+.travel-journal {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.destination-card {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    gap: 30px;
+}
+
+.destination-text {
+    flex: 2;
+}
+
+.destination-image {
+    flex: 1;
+    min-width: 300px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.destination-image:hover img {
+    transform: scale(1.1);
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #6ab0de, #a5d5f7);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px 0;
+}
+
+.tips-section {
+    background: rgba(255, 245, 230, 0.9);
+    border-left: 5px solid #f39c12;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 30px 0;
+}

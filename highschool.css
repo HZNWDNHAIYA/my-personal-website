@@ -1,0 +1,357 @@
+/* 页面基础样式 */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* 导航栏样式 - 紫色文字 */
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5c4ec9;
+    /* 紫色 */
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav li.active a {
+    background-color: #5c4ec9;
+    color: white;
+}
+
+/* 内容区域布局 */
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    flex: 0 0 250px;
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+    color: #5c4ec9;
+    /* 紫色 */
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #5c4ec9;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s;
+    display: block;
+    padding: 5px 0;
+}
+
+.sidebar a:hover {
+    color: #5c4ec9;
+    /* 紫色 */
+}
+
+/* 高中特色板块 */
+.xungao-features {
+    padding: 15px;
+    background-color: #f0f4ff;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+.xungao-features h4 {
+    color: #5c4ec9;
+    /* 紫色 */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.quote-box {
+    background: linear-gradient(135deg, #5c4ec9, #6a5acd);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0 3px 8px rgba(92, 78, 201, 0.3);
+}
+
+/* 主内容区样式 */
+.main-content {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 学校标题样式 */
+.school-title {
+    background: linear-gradient(to right, #3f3697, #5c4ec9);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(63, 54, 151, 0.3);
+}
+
+.school-title h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.school-title p {
+    font-size: 1.1rem;
+    opacity: 0.92;
+}
+
+/* 时间线样式 */
+.timeline-section {
+    margin-bottom: 40px;
+}
+
+.timeline-section h2 {
+    color: #3f3697;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5c4ec9;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #5c4ec9;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background-color: #f8f9fe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-left: 3px solid #5c4ec9;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #5c4ec9;
+    border-radius: 50%;
+    top: 30px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #5c4ec9;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: -38px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: -38px;
+}
+
+/* 成就展示区 */
+.achievement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-table th,
+.achievement-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.achievement-table th {
+    background-color: #5c4ec9;
+    color: white;
+    font-weight: 600;
+}
+
+.achievement-table tr:last-child td {
+    border-bottom: none;
+}
+
+.achievement-table tr:hover {
+    background-color: #f8f9fe;
+}
+
+/* 校园记忆区 */
+.memory-section {
+    margin-bottom: 30px;
+}
+
+.memory-section h2 {
+    color: #3f3697;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5c4ec9;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.memory-card {
+    background-color: #f8f9fe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #6a5acd;
+}
+
+.memory-card h3 {
+    color: #3f3697;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+/* 页脚样式 */
+.site-footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 15px 30px;
+}
+
+.footer-section h3 {
+    color: #64b3f4;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 响应式调整 */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-nav li {
+        margin: 5px;
+    }
+}

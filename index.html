@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站 | 大学生主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页眉区域 -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>我的大学生活</h1>
+            <p>记录生活点滴，分享成长故事</p>
+        </div>
+        <div class="header-overlay"></div>
+    </header>
+    
+    <!-- 主导航栏 -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="about.html">个人简介</a></li>
+            <li><a href="hometown.html">我的家乡</a></li>
+            <li><a href="highschool.html">高中母校</a></li>
+            <li><a href="travel.html">旅游经历</a></li>
+        </ul>
+    </nav>
+    
+    <!-- 主体内容区 -->
+    <div class="content-wrapper">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <div class="user-card">
+                <div class="avatar-placeholder"></div>
+                <h3>关于我</h3>
+                <p>一名热爱生活和学习的大学生，喜欢探索世界，记录生活点滴。</p>
+            </div>
+            
+            <div class="quick-links">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="about.html#interests">兴趣爱好</a></li>
+                    <li><a href="travel.html#kunming">昆明旅游</a></li>
+                    <li><a href="highschool.html#history">母校历史</a></li>
+                    <li><a href="hometown.html">美丽家乡</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <section class="welcome-section">
+                <h2>欢迎来到我的个人网站</h2>
+                <p>这里是我的个人空间，包含了我的个人简介、家乡介绍、高中母校回忆和旅游经历等内容。希望能够与大家分享我的成长故事和精彩生活。</p>
+                
+                <div class="featured-content">
+                    <div class="content-card">
+                        <div class="card-image placeholder img1"></div>
+                        <h3>个人简介</h3>
+                        <p>分享我的个人兴趣爱好</p>
+                        <a href="about.html" class="button">了解更多</a>
+                    </div>
+                    
+                    <div class="content-card">
+                        <div class="card-image placeholder img2"></div>
+                        <h3>旅游经历</h3>
+                        <p>分享在昆明的旅程</p>
+                        <a href="travel.html" class="button">了解更多</a>
+                    </div>
+                    
+                    <div class="content-card">
+                        <div class="card-image placeholder img3"></div>
+                        <h3>家乡记忆</h3>
+                        <p>分享我的家乡-桂平市的大好河山</p>
+                        <a href="hometown.html" class="button">了解更多</a>
+                    </div>
+
+                     <div class="content-card">
+                        <div class="card-image placeholder img4"></div>
+                        <h3>高中母校</h3>
+                        <p>分享我的母校-浔高</p>
+                        <a href="highschool.html" class="button">了解更多</a>
+                </div>
+            </section>
+            
+            <section class="contact-form">
+                <h2>与我联系</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱：</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言：</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>感兴趣的栏目：</label>
+                    <div>
+                        <input type="checkbox" id="travel" name="interest" value="travel">
+                        <label for="travel">旅游经历</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hometown" name="interest" value="hometown">
+                        <label for="hometown">我的家乡</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="school" name="interest" value="school">
+                        <label for="school">高中母校</label>
+                    </div>
+                    </div>
+                    <button type="submit" class="button">发送信息</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    
+    <!-- 页脚区域 -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于本站</h3>
+                <p>这是我的个人网站</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>网站导航</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="hometown.html">我的家乡</a></li>
+                    <li><a href="highschool.html">高中母校</a></li>
+                    <li><a href="travel.html">旅行故事</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 我的大学生活 | 个人网站</p>
+        </div>
+    </footer>
+</body>
+</html>
